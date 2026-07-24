@@ -1062,6 +1062,7 @@
     .brands-row {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 0;
     }
 
@@ -1192,7 +1193,7 @@
 
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 1px;
       background: var(--border);
       border: 1px solid var(--border);
@@ -2350,6 +2351,7 @@
     <div class="sn-dot-f"></div>
     <div class="sn-dot-f"></div>
     <div class="sn-dot-f"></div>
+    <div class="sn-dot-f"></div>
   </div>
 
   <!-- SCROLL HINT -->
@@ -2369,6 +2371,7 @@
     </a>
     <ul class="nav-links">
       <li><a href="#hero">Home</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -2729,6 +2732,14 @@
           <div class="tech-icon"></div>
           <div class="tech-name">Firebase</div>
         </div>
+        <div class="tech-pill">
+          <div class="tech-icon"></div>
+          <div class="tech-name">Blender</div>
+        </div>
+        <div class="tech-pill">
+          <div class="tech-icon"></div>
+          <div class="tech-name">Canva</div>
+        </div>
       </div>
     </div>
   </section>
@@ -2793,7 +2804,7 @@
       <div class="sec-meta">
         <h2 class="sec-heading">My <span class="red">Skills</span></h2>
         <div>
-          <p class="sec-desc">From pixel-perfect frontends to robust backends — I build complete, scalable web solutions
+          <p class="sec-desc">From pixel-perfect frontends to robust backends & 3D graphics — I build complete, scalable web solutions
             end-to-end.</p>
         </div>
       </div>
@@ -2849,6 +2860,23 @@
           <div class="sk-tags"><span class="sk-tag">MongoDB</span><span class="sk-tag">MySQL</span><span
               class="sk-tag">Firebase</span></div>
         </div>
+        <div class="skill-card">
+          <div class="sk-num"><span>04</span><span style="color:rgba(255,255,255,.1);letter-spacing:2px">///</span>
+          </div>
+          <div class="sk-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 19l7-7 3 3-7 7-3-3z" />
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+              <path d="M2 2l7.586 7.586" />
+              <circle cx="11" cy="11" r="2" />
+            </svg>
+          </div>
+          <div class="sk-title">Design & Creative Tools</div>
+          <div class="sk-line"></div>
+          <p class="sk-desc">Crafting 3D models, visual graphics, UI assets, and creative branding elements using Blender and Canva.</p>
+          <div class="sk-tags"><span class="sk-tag">Blender</span><span class="sk-tag">Canva</span><span
+              class="sk-tag">Figma</span><span class="sk-tag">UI/UX</span></div>
+        </div>
       </div>
 
       <!-- Stats Row -->
@@ -2858,7 +2886,7 @@
               <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
             </svg></div>
           <div>
-            <div class="si-num" data-count="8" data-suffix="+">0</div>
+            <div class="si-num" data-count="10" data-suffix="+">0</div>
             <div class="si-lbl">Technologies</div>
           </div>
         </div>
@@ -3370,6 +3398,7 @@
     </div>
     <ul class="footer-nav">
       <li><a href="#hero">Home</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -3409,7 +3438,7 @@
     });
 
     /* ── SIDE DOTS ── */
-    const sectionIds = ['hero', 'skills', 'projects', 'process', 'testimonials', 'experience', 'contact'];
+    const sectionIds = ['hero', 'services', 'skills', 'projects', 'process', 'testimonials', 'experience', 'contact'];
     const dots = document.querySelectorAll('.sn-dot-f');
     sectionIds.forEach((id, i) => {
       ScrollTrigger.create({
@@ -3471,7 +3500,7 @@
       { text: "> Frontend  [█████████░] 90% (React, JS, CSS, HTML)", type: "out", delay: 150 },
       { text: "> Backend   [████████░░] 80% (Python, Node.js)", type: "out", delay: 150 },
       { text: "> Database  [███████░░░] 75% (MongoDB, MySQL, Firebase)", type: "out", delay: 150 },
-      { text: "> Tools     [███████░░░] 70% (Git, APIs, Figma)", type: "out", delay: 150 },
+      { text: "> Creative  [████████░░] 80% (Blender, Canva, Figma)", type: "out", delay: 150 },
       { text: "", type: "out", delay: 200 },
       { text: "karthi@portfolio:~$ cat status.json", type: "cmd", delay: 500 },
       { text: "{", type: "out", delay: 100 },
